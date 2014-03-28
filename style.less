@@ -1,0 +1,32 @@
+@top: #3498db;
+@headers: #2980b9;
+@admins: #8e44ad;
+
+/* Remove slogan */
+#logo:after {
+	display: none;
+}
+
+/* Change top bar color */
+#top {
+	background: @top;
+}
+
+#tracker .fakeTop {
+	background: @top;
+}
+
+/* Remove jobs on front page */
+#jobs { 
+	display: none;
+}
+
+/* Change header color */
+h1, h2, h1 a, h2 a {
+	color: @headers;
+}
+
+/* Admin highlighter */ 
+.crew {
+	color: @admins;
+}
