@@ -1,0 +1,56 @@
+& when (iscolor(@admins)) {
+  /* Admin highlighter
+   * By Chris7 & Catorce (http://gathering.tweakers.net/forum/list_message/41368148#41368148)
+   */
+  .crew {
+    color: @admins;
+  }
+}
+
+& when (@showPostedAt) {
+  /* Show posted at for forum posts
+   * By Wiethoofd (http://gathering.tweakers.net/forum/list_message/39124431#39124431)
+   */
+  .message .messageheader .date a {
+    text-transform: lowercase;
+  }
+  .message .messageheader .date a:before {
+    content: 'Geplaatst op ';
+    text-transform: none;
+  }
+}
+
+& when (@placePostsClose) {
+  /* Place posts close togher
+   * By Wiethoofd (http://gathering.tweakers.net/forum/list_message/39124431#39124431)
+   */
+  /* Dit zal vast meer fixes nodig hebben dan de h2 bij de quotes! */
+  div.message, div.faq {
+    margin-top: -16px;
+  }
+  #quotemessages h2 {
+    padding-bottom: 15px;
+  }
+}
+
+& when (@replyStyleNewMessages) {
+  /* Get "X nieuwe berichten" in the same style as replies
+   * By ikbenwouter (http://gathering.tweakers.net/forum/list_message/39124472#39124472)
+   */
+  #newMessageNotification {
+    background-color: #EDEEEE;
+    border: 1px solid #DDDEDE;
+  }
+  #newMessageNotification:hover, #newMessageNotification.error {
+    background-color: #ddd;
+  }
+}
+
+& when (@lessSpaceBetweenTopicTitles) {
+  /* Less space between topic titles
+   * By Kamstra & Wiethoofd (http://gathering.tweakers.net/forum/list_message/39126000#39126000)
+   */
+  table.listing td, table.listing th {
+    padding: 4px 5px;
+  }
+}

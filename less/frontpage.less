@@ -1,0 +1,42 @@
+& when (@hideJobs) {
+  /* Remove jobs on front page
+   * By koesie10
+   */
+  #jobs {
+    display: none;
+  }
+}
+
+& when (@compactFromCommunity) {
+  /* Make "Uit de community" compact
+   * By Wiethoofd (http://gathering.tweakers.net/forum/list_message/39127327#39127327)
+   */
+  #community a.thumb.community, #community li a + p + p {
+    display: none;
+  }
+  #community li p a {
+    padding-left: 22px;
+    background: url(http://tweakers.net/ext/f/F6gUDomPcHwgdsvkXth1AwMV/full.png) 2px center no-repeat;
+  }
+  #community li p a[href*="gathering.tweakers"] {
+    background-image: url(http://tweakers.net/ext/f/SBhLZs2UQqEw99lMveSlKwjP/full.png);
+  }
+  #community ul li:first-child {
+    border-bottom: 0 none;
+  }
+  #community li {
+    float: none;
+    width: 620px;
+    margin: 0;
+    border-bottom: 1px solid #E8EAEA;
+    border-top: 0 none;
+    padding: 4px 0 2px;
+  }
+  #community li p {
+    display: inline-block;
+  }
+  #community li p:last-child {
+    /* li a+p+p+p voor IE7 en lager */
+    float: right;
+  }
+}
