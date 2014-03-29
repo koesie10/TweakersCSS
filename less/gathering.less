@@ -54,3 +54,12 @@
     padding: 4px 5px;
   }
 }
+
+& when (@hideLastReply) {
+  /* Last reply in topic hides topic title
+   * By Wiethoofd (http://wiethoofd.tweakblogs.net/blog/8379/must-have-forum-custom-css-tweaks-%28non-layout-related%29.html)
+   */
+  table.listing tbody tr td.topic a[title~="@{username}"], table.listing tbody tr td.topic a[title~="@{username}"] + small a {
+    color: #BBB;
+  }
+}
