@@ -63,3 +63,25 @@
     color: #BBB;
   }
 }
+
+& when (@lessObviousThumbsUp) {
+  /* Smaller and half transparent thumbs up
+   * By incaz (http://gathering.tweakers.net/forum/list_message/44806068#44806068)
+   */
+  .action_list li.rating {
+    transform: scale(0.5);
+    opacity: 0.4;
+  }
+  span.thumbsup{
+    transform: scale(0.75) !important;
+  }
+}
+
+& when (@hideThumbsUp) {
+  /* Hide thumbs up
+   * By WernerL (http://gathering.tweakers.net/forum/list_message/44803714#44803714)
+   */
+  .action_list li.rating {
+    display: none !important;
+  }
+}

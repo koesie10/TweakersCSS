@@ -256,6 +256,28 @@
                     </div>
                 </div>
             </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="lessObviousThumbsUp" class="customizable"
+                                   id="lessObviousThumbsUp"
+                                   data-variable="@lessObviousThumbsUp"> Minder opvallende thumbs up
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="hideThumbsUp" class="customizable"
+                                   id="hideThumbsUp"
+                                   data-variable="@hideThumbsUp"> Thumbs up verbergen
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -314,6 +336,9 @@
     <h3>Output
         <button id="copy-output" class="btn btn-primary" data-clipboard-target="output"
                 title="Klik om te kopiëren.">Kopiëren
+        </button>
+        <button id="transform-js" class="btn btn-default" title="Klik om te transformeren">
+            Maak Tampermonkey script
         </button>
         <button id="copy-close" type="button" class="close" aria-hidden="true">&times;</button>
     </h3>
